@@ -12,13 +12,18 @@ RUN apt -y install \
     curl \
     systemctl
     
-RUN echo "deb [arch=$( dpkg --print-architecture ) signed-by=/usr/share/keyrings/jellyfin.gpg] https://repo.jellyfin.org/debian bullseye main" | tee /etc/apt/sources.list.d/jellyfin.list
+RUN apt install -y extrepo
+RUN extrepo enable jellyfin
 
 RUN apt update
 
 RUN apt install jellyfin -y
     
 
-RUN systemctl start jellyfin
+RUN service jellyfin status
+RUN systemctl restart jellyfin
+RUN /etc/init.d/jellyfin stop
+
+
 
 EXPOSE 8096
