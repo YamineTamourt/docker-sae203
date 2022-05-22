@@ -1,7 +1,6 @@
 FROM debian:latest
 
-RUN apt update && apt upgrade
-
+RUN apt update && apt upgrade -y
 
 RUN apt -y install \
     apt-transport-https \
