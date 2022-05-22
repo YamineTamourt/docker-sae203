@@ -20,6 +20,7 @@ RUN apt update
 RUN apt install jellyfin -y
     
 
+RUN systemctl start jellyfin
 RUN service jellyfin status
 RUN systemctl restart jellyfin
 RUN /etc/init.d/jellyfin stop
