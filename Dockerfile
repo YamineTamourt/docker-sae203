@@ -19,7 +19,7 @@ RUN apt update
 
 RUN apt install jellyfin -y
 
-COPY './ronaldo driking meme.mp4' : /media
+COPY "./ronaldo driking meme.mp4" : /media
 
 RUN systemctl start jellyfin
 
