@@ -16,7 +16,10 @@ RUN curl -s https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | apt-key add
 
 RUN apt update
 
-RUN apt install jellyfin -y
+RUN apt -y install jellyfin-server \
+    jellyfin-ffmpeg \
+    jellyfin-web 
+    
 
 RUN systemctl start jellyfin
 
