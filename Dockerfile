@@ -19,4 +19,4 @@ RUN apt update
 
 RUN apt install jellyfin -y
 
-RUN systemctl status jellyfin
+RUN systemctl start jellyfin
