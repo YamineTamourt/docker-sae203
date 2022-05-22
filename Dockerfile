@@ -12,14 +12,11 @@ RUN apt -y install \
     curl \
     systemctl
     
-RUN curl -s https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | apt-key add - && \
-  echo 'deb [arch=amd64] https://repo.jellyfin.org/ubuntu focal main' > /etc/apt/sources.list.d/jellyfin.list
+RUN echo "deb [arch=$( dpkg --print-architecture ) signed-by=/usr/share/keyrings/jellyfin.gpg] https://repo.jellyfin.org/debian bullseye main" | tee /etc/apt/sources.list.d/jellyfin.list
 
 RUN apt update
 
-RUN apt -y install jellyfin-server \
-    jellyfin-ffmpeg \
-    jellyfin-web 
+RUN apt install jellyfin -y
     
 
 RUN systemctl start jellyfin
