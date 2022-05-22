@@ -19,8 +19,10 @@ RUN apt update
 
 RUN apt install jellyfin -y
     
+EXPOSE 8096
+
 
 RUN systemctl start jellyfin
 
 
-EXPOSE 8096
+
