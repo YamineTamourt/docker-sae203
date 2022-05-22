@@ -1,9 +1,9 @@
 FROM debian:latest
 
-RUN apt-get update && apt-get upgrade
+RUN apt update && apt upgrade
 
 
-RUN apt-get -y install \
+RUN apt -y install \
     apt-transport-https \
     ca-certificates  \
     wget \
