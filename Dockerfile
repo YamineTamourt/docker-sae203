@@ -22,9 +22,7 @@ RUN apt install jellyfin -y
 COPY ./Init.sh /root/
 COPY ./ronaldo_drinking_meme.mp4 /media
 
-#RUN systemctl restart jellyfin
-#RUN systemctl enable jellyfin
-#RUN /etc/init.d/jellyfin stop
+RUN systemctl enable jellyfin
 
 EXPOSE 8096
 
