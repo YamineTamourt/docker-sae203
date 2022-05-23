@@ -31,9 +31,6 @@ COPY ./ronaldo_drinking_meme.mp4 /media
 
 EXPOSE 8096
 
-ENTRYPOINT systemctl enable jellyfin
-ENTRYPOINT systemctl start jellyfin
-
-#RUN chmod +x /root/Init.sh
-#CMD ["/bin/bash", "/root/Init.sh"]
+RUN chmod +x /root/Init.sh
+CMD ["/bin/bash", "/root/Init.sh"]
 
