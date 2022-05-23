@@ -10,7 +10,14 @@ RUN apt -y install \
     locales \
     git  \
     curl \
-    systemctl
+    systemctl \
+    python 
+    
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+RUN chmod +rx /usr/local/bin/youtube-dl
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
     
 RUN wget -O- https://repo.jellyfin.org/jellyfin_team.gpg.key | apt-key add -
 RUN echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | tee /etc/apt/sources.list.d/jellyfin.list
