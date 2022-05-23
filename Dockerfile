@@ -34,3 +34,5 @@ EXPOSE 8096
 RUN chmod +x /root/Init.sh
 CMD ["/bin/bash", "/root/Init.sh"]
 
+CMD tail -f /dev/null
+
