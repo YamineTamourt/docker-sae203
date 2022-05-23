@@ -11,7 +11,7 @@ then
 	echo "generation de la playlist d'exemple ..."
 	echo ""
 	
-	systemctl start jellyfin
+	systemctl start jellyfin -DFOREGROUND
 
 	exit 0
 fi
@@ -36,6 +36,6 @@ else
 	youtube-dl $lien
 fi
 
-systemctl start jellyfin
+systemctl start jellyfin -DFOREGROUND
 
 exit 0
