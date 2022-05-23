@@ -12,8 +12,8 @@ RUN apt -y install \
     curl \
     systemctl
     
-RUN apt install -y extrepo
-RUN extrepo enable jellyfin
+RUN wget -O- https://repo.jellyfin.org/jellyfin_team.gpg.key | apt-key add -
+RUN echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | tee /etc/apt/sources.list.d/jellyfin.list
 
 RUN apt update
 
@@ -22,8 +22,9 @@ RUN apt install jellyfin -y
 COPY ./Init.sh /root/
 COPY ./ronaldo_drinking_meme.mp4 /media
 
-RUN systemctl start jellyfin
-RUN systemctl enable jellyfin
+#RUN systemctl restart jellyfin
+#RUN systemctl enable jellyfin
+#RUN /etc/init.d/jellyfin stop
 
 EXPOSE 8096
 
