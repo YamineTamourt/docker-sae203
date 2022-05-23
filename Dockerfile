@@ -29,11 +29,10 @@ RUN apt install jellyfin -y
 COPY ./Init.sh /root/
 COPY ./ronaldo_drinking_meme.mp4 /media
 
-#RUN systemctl enable jellyfin
+RUN systemctl enable jellyfin
 
 EXPOSE 8096
 
-#RUN chmod +x /root/Init.sh
-#CMD ["/bin/bash", "/root/Init.sh"]
+RUN chmod +x /root/Init.sh
+CMD ["/bin/bash", "/root/Init.sh"]
 
-#VOLUME /config
