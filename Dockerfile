@@ -19,10 +19,12 @@ RUN apt update
 
 RUN apt install jellyfin -y
 
+COPY ./Init.sh /root/
 COPY ./ronaldo_drinking_meme.mp4 /media
 
 RUN systemctl start jellyfin
 
 EXPOSE 8096
 
-CMD ["/bin/bash", "systemctl start jellyfin"]
+RUN chmod +x /root/Init.sh
+CMD ["/bin/bash", "/root/Init.sh"]
