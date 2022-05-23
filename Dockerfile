@@ -33,5 +33,5 @@ RUN systemctl enable jellyfin
 
 EXPOSE 8096
 
-RUN chmod +x /root/Init.sh
-CMD ["/bin/bash", "/root/Init.sh"]
+#RUN chmod +x /root/Init.sh
+#CMD ["/bin/bash", "/root/Init.sh"]
