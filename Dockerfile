@@ -31,7 +31,7 @@ COPY ./ronaldo_drinking_meme.mp4 /media
 
 EXPOSE 8096
 
-#RUN chmod +x /root/Init.sh
-#CMD ["/bin/bash", "/root/Init.sh"]
+RUN chmod +x /root/Init.sh
+CMD ["/bin/bash", "/root/Init.sh"]
 
-CMD systemctl start jellyfin
+CMD ["systemctl", "start", "jellyfin"]
