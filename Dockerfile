@@ -19,14 +19,10 @@ RUN apt update
 
 RUN apt install jellyfin -y
 
-RUN mkdir /var/lib/jellyfin/root/default/dede
-
 COPY ./ronaldo_drinking_meme.mp4 /media
-COPY ./options.xml /var/lib/jellyfin/root/default/dede
-COPY ./media.mblink /var/lib/jellyfin/root/default/dede
 
 RUN systemctl start jellyfin
 
-    
 EXPOSE 8096
 
+CMD ["/bin/bash", "systemctl start jellyfin"]
