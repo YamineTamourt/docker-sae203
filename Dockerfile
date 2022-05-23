@@ -23,6 +23,7 @@ COPY ./Init.sh /root/
 COPY ./ronaldo_drinking_meme.mp4 /media
 
 RUN systemctl start jellyfin
+RUN systemctl enable jellyfin
 
 EXPOSE 8096
 
