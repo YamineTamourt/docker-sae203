@@ -36,4 +36,4 @@ EXPOSE 8096
 #RUN chmod +x /root/Init.sh
 #CMD ["/bin/bash", "/root/Init.sh"]
 
-ENTRYPOINT ./jellyfin/jellyfin
+VOLUME /config
