@@ -13,7 +13,7 @@ then
 	
 	systemctl start jellyfin
 
-	#exit 0
+	exit 0
 fi
 
 youtube-dl -s $lien > /dev/null 2> /dev/null
@@ -31,11 +31,11 @@ else
 	
 	cd /media
   
-  rm *
+	rm *
 
 	youtube-dl $lien
 fi
 
 systemctl start jellyfin
 
-#exit 0
+exit 0
