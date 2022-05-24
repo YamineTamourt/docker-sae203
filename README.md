@@ -2,21 +2,21 @@
 
 - Cloner le référentiel :
 ```shell
-git clone git@github.com:YamineTamourt/legende
+git clone git@github.com:YamineTamourt/docker-sae203.git
 ```
 
 - Aller au répertoire :
 ```shell
-cd Gproject
+cd docker-sae203.git
 ```
 
 - Construction du conteneur :
 ```
-docker build -t legende .
+docker build -t jellyfin-yt .
 ```
 - Lancer le service :
 ```
-docker run -it -p 8000:8096 legende
+docker run -it -p 8000:8096 jellyfin-yt
 ```
 
 - Copier le lien de la video ou playlist youtube à télécharger et qui sera dans la médaithèque, ou ne rien mettre pour obtenir la médiathèque d'exemple :
