@@ -27,7 +27,7 @@ RUN apt update
 RUN apt install jellyfin -y
 
 COPY ./Init.sh /root/
-COPY ./ronaldo_drinking_meme.mp4 /media
+COPY ./video /media
 
 EXPOSE 8096
 
