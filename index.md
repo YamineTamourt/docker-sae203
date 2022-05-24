@@ -23,7 +23,7 @@ Mais, car le serveur Apache était déjà un exemple du cours, nous nous sommes 
 
 Dans notre Dockerfile, nous avons dût installer youtube-dl et jellyfin sur notre image Debian en suivant les tutoriels disponible sur Tnternet, puis il fallait deplacer les videos d'exemples dans le répertoire /media, et enfin, faire en sorte de lancer à la création du conteneur la commande qui lance le serveur jellyfin, et notre script bash qui récupère la playlist à téléchager ou non et à l'envoyer dans le répertoire /media.
 
-L'inconvénient et que dans ce projet, nous n'avons pas les métadonnées des vidéos comme sur le projet avec le serveur Apache.
+L'inconvénient de ce projet est que nous n'avons pas les métadonnées des vidéos comme sur le projet avec le serveur Apache.
 
 ## Membre du groupe 
 
