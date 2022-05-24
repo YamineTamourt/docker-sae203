@@ -27,7 +27,7 @@ L'inconvénient de ce projet est que nous n'avons pas les métadonnées des vid�
 
 ## Membre du groupe 
 
-Groupe 25
+Groupe 22
 
 - C TAMOURT Yamine
 - C LETOURNEAU Thomas
