@@ -23,7 +23,9 @@ docker run -it -p 8000:8096 legende
 
 ```
 Entrer le lien de la playlist/video (vide pour generer la playlist d'exemple)
+
 https://www.youtube.com/watch?v=ZA3Tym3SQTs
+
 telechargement de la playlist/video ...
 ```
 - Après le téléchargement, vérifier que l'application est en cours d'exécution. Pour ce faire, ouvrez un navigateur et tapez ```localhost:8000/```
