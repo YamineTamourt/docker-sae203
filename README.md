@@ -28,7 +28,9 @@ https://www.youtube.com/watch?v=ZA3Tym3SQTs
 
 telechargement de la playlist/video ...
 ```
-- Après le téléchargement, vérifier que l'application est en cours d'exécution. Pour ce faire, ouvrez un navigateur et tapez ```localhost:8000/```
+- Après le téléchargement, vérifier que l'application est en cours d'exécution. Pour ce faire, ouvrir un navigateur et taper ```localhost:8000/```
+
+- Si on vous demande de choisir un serveur, supprimmer les tous (en appuyant sur les 3 points et en cliquant sur supprimer) et retaper ```localhost:8000/```
 
 - Choisir votre langue d'affichage, puis cliquer sur Prochain (ou Next en anglais) :
 
