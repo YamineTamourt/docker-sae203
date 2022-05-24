@@ -15,7 +15,7 @@ Afin de réaliser ce projet nous avons utilisé les logiciels suivant :
 
 ## Les étapes du projets
 
-Pour commencer le projet nous avons tout d’abords répartis le projet en différentes étapes. En premier lieu il a fallut créer un répertoire GitHub pour l’équipe, et en attribuer les droits de lecture et d’écriture à nos membres. 
+Pour commencer le projet nous avons tout d’abords répartis le projet en différentes étapes. En premier lieu il a fallut créer un répertoire GitHub pour l’équipe, et en attribuer les droits de lecture et d’écriture à nos membres. Puis il fallait configurer le Dockerfile et enfin créer les programmes pour télécharger automatiquement les vidéos.
 
 A l'origine, nous avons fait un serveur Apache avec un script bash qui récupèrait la playlist à téléchager ou non et un programme Java qui, à partir d'un .data généré par un autre script bash, créait une page HTML avec chaque vidéos avec son titre, son auteur, sa date et sa description. Ce projet est disponible [ici](https://github.com/YamineTamourt/Gproject).
 
