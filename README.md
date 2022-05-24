@@ -44,30 +44,30 @@ telechargement de la playlist/video ...
 
 ![nom](images/nom.png)
 
-- Selectionner le répertoire "/media", puis cliquer sur OK et encore sur OK
+- Selectionner le répertoire "/media", puis cliquer sur OK et encore sur OK :
 
 ![media](images/media.png)
 
-- Cliquer sur Prochain
+- Cliquer sur Prochain :
 
 ![prochain](images/prochain.png)
 
-- Choisir une langue pour les métadonnées, puis cliquer sur Prochain
+- Choisir une langue pour les métadonnées, puis cliquer sur Prochain : 
 
 ![metadonnees](images/metadonnees.png)
 
-- Cliquer sur Prochain
+- Cliquer sur Prochain :
 
 ![acces](images/acces.png)
 
-- Cliquer sur Terminer
+- Cliquer sur Terminer :
 
 ![termine](images/termine.png)
 
-- Se connecter avec le compte utilisateur créé précédemment
+- Se connecter avec le compte utilisateur créé précédemment :
 
 ![connection](images/connection.png)
 
-- Voici donc les vidéos téléchargés
+- Voici donc les vidéos téléchargés :
 
 ![fini](images/fini.png)
