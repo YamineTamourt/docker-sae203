@@ -36,9 +36,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-## RAPPORT SAE 2.06
+# RAPPORT SAE 2.06
 
-# Groupe 25
+## Groupe 25
 
 - C TAMOURT Yamine
 - C LETOURNEAU Thomas
