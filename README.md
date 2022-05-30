@@ -32,6 +32,10 @@ telechargement de la playlist/video ...
 
 - Si on vous demande de choisir un serveur, supprimmer les tous (en appuyant sur les 3 points et en cliquant sur supprimer) et retaper ```localhost:8000/```
 
+- Si vous vouyez cette page, vider le cache du navigateur. Sinon, passer à l'étape suivante :
+
+![serveur](images/serveur.png)
+
 - Choisir votre langue d'affichage, puis cliquer sur Prochain (ou Next en anglais) :
 
 ![demarrage](images/demarrage.png)
