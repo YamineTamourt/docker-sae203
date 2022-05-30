@@ -30,9 +30,7 @@ telechargement de la playlist/video ...
 ```
 - Après le téléchargement, vérifier que l'application est en cours d'exécution. Pour ce faire, ouvrir un navigateur et taper ```localhost:8000/```
 
-- Si on vous demande de choisir un serveur, supprimmer les tous (en appuyant sur les 3 points et en cliquant sur supprimer) et retaper ```localhost:8000/```
-
-- Si vous vouyez cette page, vider le cache du navigateur. Sinon, passer à l'étape suivante :
+- Si vous voyez cette page, vider le cache du navigateur  et retaper ```localhost:8000/```. Sinon, passer à l'étape suivante :
 
 ![serveur](images/serveur.png)
 
